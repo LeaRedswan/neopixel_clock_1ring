@@ -34,7 +34,7 @@ void setup()
     ring.setBrightness(20);
     ring.show(); 
     DCF.Start();
-    setTime(10,43,34, 1, 1, 1970);
+    setTime(4,59,34, 1, 1, 1970);
     setSyncInterval(30);
     setSyncProvider(ReadTimeDate);
 
@@ -94,7 +94,7 @@ void displayTime() {
 }
 
 int houroffset(int value){
-  if (value < 5 )
+  if (value <= 5 )
       return 30;
   else
       return -30;
